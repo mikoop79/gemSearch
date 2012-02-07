@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<style type="text/css" >
+body{ font-family: Arial, Helvetica, sans-serif;}
+#wrapper {width:100%px; margin:30px 0 0 0; padding:15px 0 0 0px; font-size:12px;}
+#searchform{ width:320px; margin:0; padding:0;}
+#searchform ul {list-style:none; padding:0; margin:0 10px;}
+#searchform li{ margin:5px; padding:0; height:45px;}
+#searchform li input, #searchform li select{ margin:0px 15px 0 0;  width:150px; float:right;}
+#searchform li input.error{background:#CFF;}
+#searchform li label{ margin:0px 15px 0 0; width:100px; float:left; font-size:12px;}
+#searchform li span.error{ text-align:right; width:155px; display:block; float:right; height:25px; margin:0px 15px 0 0px; color:red; }
+.red { background:#FF0000;}
+.blue { background:#00F;}
+.green { background:#00CC00;}
+
+
+</style>
+<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="kandan_logo"></div>
+<div id="wrapper">
+
+<form action="script.php" method="POST" id="searchform" >
+	<ul class="reds">
+		<li><label for="name">Name:</label><input type="text" name="name" class="error" /> <span class="error">ss</span></li>
+		<!--<li><label for="name">Code: </label><input type="text" name="code" /></li>-->
+		<!--<li><label for="name">K Number: </label><input type="text" name="knumber" /></li>-->
+		<li><label for="name">Ad Type: </label><select type="text" name="type">
+																<option selected="selected" value="0" >ALL</option>
+																<option value="1" >Brand</option>
+																<option value="2" >Campaign</option>
+																<option value="3" >Info</option>
+																<option value="4" >Community</option>
+																<option value="5" >Tips</option>
+																</select></li>
+		<li><label for="name">Type: </label><select type="text" name="type">
+																<option selected="selected" value="1" >Standard Gem</option>
+																<option value="4" >Prospect</option>
+																<option value="3" >Template</option>
+																<option value="2" >Matrix</option>
+																</select></li>
+		<li><label for="name">Status: </label><select type="text" name="progress">
+																<option value="1" >In Progress</option>
+																<option value="2" >Completed</option>
+																<option value="3" >Archive</option>
+																</select></li>
+		<!--<li><label for="name">Date: </label><input type="text" name="date" /></li>-->
+		<li><input type="submit" name="submit" value="submit" /></li>
+	</ul>
+	
+	
+</form>
+
+</div>
+
+</body>
+</html>
